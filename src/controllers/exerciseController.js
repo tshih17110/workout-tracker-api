@@ -1,31 +1,3 @@
-// const Exercise = require('../models/Exercise');
-
-// exports.getExercises = async (req, res) => {
-//     try {
-//         const exercises = await Exercise.find();
-//         res.json(exercises);
-//     } catch (err) {
-//         res.status(400).send(err);
-//     }
-// };
-
-// exports.createExercise = async (req, res) => {
-//     const { name, category, muscleGroup } = req.body;
-
-//     if (!name || !category || !muscleGroup) {
-//         return res.status(400).json({ message: 'Missing fields' });
-//     }
-
-//     try {
-//         const newExercise = new Exercise({ name, category, muscleGroup });
-//         await newExercise.save();
-
-//         res.status(201).json({ message: 'Exercise created.', exercise: newExercise });
-//     } catch (err) {
-//         res.status(400).json({ message: 'Server error', error: err});
-//     }
-// }
-
 const { status } = require('http-status');
 const exerciseService = require('../services/exerciseService');
 const ApiError = require('../utils/ApiError');
