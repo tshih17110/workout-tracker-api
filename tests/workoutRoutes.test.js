@@ -63,5 +63,4 @@ describe('Workout routes', () => {
 afterAll(async () => {
     await mongoose.disconnect();
     await mongoServer.stop();
-    await mongoServer.cleanup();
 });
