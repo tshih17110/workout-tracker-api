@@ -13,3 +13,5 @@ lerna-debug.log*
 .cache
 
 node_modules/
+
+.vscode/
